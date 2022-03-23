@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Calculadora</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="desing.css">
+</head>
+
+<body>
+    <!-- Apresentação do Projeto-->
+    <div class="titulo">
+        <header>
+            <h1>Calculadora 3.0</h1>
+        </header>
+    </div>
+
+    <!-- Formulário de entrada de Dados -->
+    <div class="container">
+
+        <!--Estrutura do Visor-->
+        <div id="display">
+            <p id="textarea"></p>
+        </div>
+
+
+        <div class="options">
+            <table class="options-table">
+
+                <!--Estrtura do Botão de Limpar-->
+                <div class="limpar">
+                    <button onclick="limpar('')">C</button>
+                </div>
+
+                <tr>
+                    <td><button class="option" onclick="insert('7')">7</button></td>
+                    <td><button class="option" onclick="insert('8')">8</button></td>
+                    <td><button class="option" onclick="insert('9')">9</button></td>
+                    
+                    <td><button class="option" onclick="insert('*')">x</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="option" onclick="insert('4')">4</button></td>
+                    <td><button class="option" onclick="insert('5')">5</button></td>
+                    <td><button class="option" onclick="insert('6')">6</button></td>
+
+                    <td><button class="option divisao" onclick="insert('/')">/</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="option" onclick="insert('1')">1</button></td>
+                    <td><button class="option" onclick="insert('2')">2</button></td>
+                    <td><button class="option" onclick="insert('3')">3</button></td>
+
+                    <td><button class="option menos" onclick="insert('-')">-</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="option" onclick="insert('0')">0</button></td>
+
+
+                    <td><button class="option ponto" onclick="insert('.')">.</button></td>
+                    <td><button class="option" onclick="calcular()">=</button></td>
+                    <td><button class="option" onclick="insert('+')">+</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!--Estrutura Final-->
+    <div class="rodape">
+        <footer>
+            EU
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
